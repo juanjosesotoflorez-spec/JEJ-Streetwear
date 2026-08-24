@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JE&J Streetwear</title>
+  <meta charset="utf-8">
+  <meta name="description" content="JE&J Streetwear 3D Customizer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="styles.css" rel="stylesheet"/>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #000 0%, #b30000 100%);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 2px 2px 10px #b30000;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav button {
+      background: #b30000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #ff1a1a;
+      transform: scale(1.05);
+    }
+
+    /* Main viewer section */
+    main {
+      flex: 1;
+      display: flex;
+    }
+
+    model-viewer {
+      flex: 3;
+      height: 100%;
+      background: #222;
+    }
+
+    /* Control panel */
+    aside {
+      flex: 1;
+      background: #1a1a1a;
+      border-left: 3px solid #b30000;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    aside h2 {
+      font-size: 1.4rem;
+      color: #ff1a1a;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #b30000;
+      padding-bottom: 5px;
+    }
+
+    label {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, select {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .apply-btn {
+      background: #b30000;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .apply-btn:hover {
+      background: #ff1a1a;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>JE&J Streetwear</h1>
+    <nav>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- 3D Model -->
+    <model-viewer id="shirt-viewer" src="oversized_t-shirt.glb" camera-controls auto-rotate shadow-intensity="1">
+    </model-viewer>
+
+    <!-- Control Panel -->
+    <aside>
+      <h2>Personaliza tu prenda</h2>
+      
+      <!-- Color picker -->
+      <label for="colorPicker">Color de la prenda:</label>
+      <input type="color" id="colorPicker" value="#ffffff">
+
+      <!-- Upload logo -->
+      <label for="logoUpload">Subir logo/imagen:</label>
+      <input type="file" id="logoUpload" accept="image/*">
+
+      <!-- Add text -->
+      <label for="customText">Texto personalizado:</label>
+      <input type="text" id="customText" placeholder="Escribe tu frase...">
+
+      <label for="textSize">Tamaño del texto:</label>
+      <select id="textSize">
+        <option value="small">Pequeño</option>
+        <option value="medium" selected>Mediano</option>
+        <option value="large">Grande</option>
+      </select>
+
+      <button class="apply-btn" onclick="applyChanges()">Aplicar cambios</button>
+    </aside>
+  </main>
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <script>
+    // Aquí puedes conectar el panel con la prenda 3D
+    function applyChanges() {
+      let color = document.getElementById("colorPicker").value;
+      let text = document.getElementById("customText").value;
+      let size = document.getElementById("textSize").value;
+
+      console.log("Color:", color, "Texto:", text, "Tamaño:", size);
+      alert("Cambios aplicados (conectar al modelo 3D en script.js) 🚀");
+    }
+  </script>
+</body>
+</html>

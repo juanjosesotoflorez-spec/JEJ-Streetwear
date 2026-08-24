@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Diseño - Moda Urbana</title>
+    <link rel="stylesheet" href="css/estilo5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1><i class="fas fa-tshirt"></i> Diseña tu Ropa</h1>
+            <div class="nav-links">
+                <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="ropasubida.html"><i class="fas fa-arrow-left"></i> Volver</a>
+                <a href="../contacto.html"><i class="fas fa-phone"></i> Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="design-container">
+        <div class="upload-section">
+            <label for="imageUpload" class="upload-btn">
+                <i class="fas fa-upload"></i> Subir Imagen Base
+            </label>
+            <input type="file" id="imageUpload" accept="image/*">
+            
+            <div class="canvas-container">
+                <canvas id="designCanvas"></canvas>
+            </div>
+
+            <div class="tools-section">
+                <div class="tool-group">
+                    <h3><i class="fas fa-palette"></i> Colores</h3>
+                    <div class="color-picker">
+                        <div class="color-option" style="background: #ff0000" onclick="cambiarColor('#ff0000')"></div>
+                        <div class="color-option" style="background: #00ff00" onclick="cambiarColor('#00ff00')"></div>
+                        <div class="color-option" style="background: #0000ff" onclick="cambiarColor('#0000ff')"></div>
+                        <div class="color-option" style="background: #ffff00" onclick="cambiarColor('#ffff00')"></div>
+                        <div class="color-option" style="background: #ff00ff" onclick="cambiarColor('#ff00ff')"></div>
+                        <div class="color-option" style="background: #00ffff" onclick="cambiarColor('#00ffff')"></div>
+                    </div>
+                </div>
+
+                <div class="tool-group">
+                    <h3><i class="fas fa-font"></i> Texto</h3>
+                    <div class="text-controls">
+                        <input type="text" class="text-input" placeholder="Escribe tu texto aquí">
+                        <select class="font-selector">
+                            <option value="Arial">Arial</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Impact">Impact</option>
+                        </select>
+                        <div class="size-controls">
+                            <input type="number" class="size-input" placeholder="Tamaño" min="8" max="72" value="24">
+                            <button class="action-btn" onclick="agregarTexto()">
+                                <i class="fas fa-plus"></i> Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-group">
+                    <h3><i class="fas fa-shapes"></i> Diseños</h3>
+                    <div class="pattern-grid">
+                        <img src="patrones/patron1.png" class="pattern-option" onclick="aplicarPatron('patron1')">
+                        <img src="patrones/patron2.png" class="pattern-option" onclick="aplicarPatron('patron2')">
+                        <img src="patrones/patron3.png" class="pattern-option" onclick="aplicarPatron('patron3')">
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-btn save-btn" onclick="guardarDiseno()">
+                    <i class="fas fa-save"></i> Guardar Diseño
+                </button>
+                <button class="action-btn preview-btn" onclick="previsualizarDiseno()">
+                    <i class="fas fa-eye"></i> Previsualizar
+                </button>
+            </div>
+        </div>
+    </div>
+
+  <script src="javascript/subir_diseno.js"></script>
+    <script src="/js/nav-auth.js"></script>
+</body>
+</html> 

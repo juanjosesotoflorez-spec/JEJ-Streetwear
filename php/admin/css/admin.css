@@ -1,0 +1,95 @@
+/* ======== ESTILOS BASE ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000000, #1a0000, #330000);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======== HEADER ======== */
+h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ff1a1a;
+    text-shadow: 0 0 8px red, 0 0 15px #b30000;
+    letter-spacing: 2px;
+}
+
+/* ======== MENÚ ======== */
+ul {
+    list-style: none;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+}
+
+ul li a {
+    display: block;
+    padding: 16px;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+ul li a:hover {
+    background: #b30000;
+    color: #fff;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 18px rgba(255, 0, 0, 0.8);
+}
+
+/* ======== BOTÓN LOGOUT ======== */
+a[href="../auth/logout.php"] {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 14px;
+    text-align: center;
+    background: linear-gradient(90deg, #b30000, #ff1a1a);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255,0,0,0.5);
+}
+
+a[href="../auth/logout.php"]:hover {
+    background: linear-gradient(90deg, #ff3333, #e60000);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(255,0,0,0.8);
+}
+
+/* ======== FOOTER ======== */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    background: #0d0d0d;
+    border-top: 1px solid #222;
+}

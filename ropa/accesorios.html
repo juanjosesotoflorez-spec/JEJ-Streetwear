@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accesorios - JE&J </title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-crown"></i> JE&J Streetwear</h1>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="catalogo.html"><i class="fas fa-th-large"></i> Catálogo</a></li>
+        <li><a href="camisas.html"><i class="fas fa-tshirt"></i> Camisas</a></li>
+        <li><a href="zapatos.html"><i class="fas fa-shoe-prints"></i> Zapatos</a></li>
+        <li><a href="buzos.html"><i class="fas fa-tshirt"></i> Buzos</a></li>
+        <li><a href="accesorios.html"><i class="fas fa-gem"></i> Accesorios</a></li>
+        <li><a href="carrito.php"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        <li><a href="../coleccion/coleccion.html"><i class="fas fa-star"></i> Colección</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-section">
+      <div class="product">
+        <img src="img/bolso.jfif" alt="Accesorio 1">
+        <p>J'Balvin Tomorroland Version Bag</p>
+        <p class="product-price">$89.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('J\'Balvin Tomorroland Version Bag', 89.99, 'img/bolso.jfif', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3001, nombre: 'J\'Balvin Tomorroland Version Bag' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/bolso2.jfif" alt="Accesorio 2">
+        <p>Mood American Football Bag</p>
+        <p class="product-price">$74.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Mood American Football Bag', 74.99, 'img/bolso2.jfif', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3002, nombre: 'Mood American Football Bag' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/maleta.jfif" alt="Accesorio 3">
+        <p>International travel bag</p>
+        <p class="product-price">$129.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('International travel bag', 129.99, 'img/maleta.jfif', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3003, nombre: 'International travel bag' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/gorra10.webp" alt="Accesorio 4">
+        <p>Jordan Basket Cap</p>
+        <p class="product-price">$34.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Basket Cap', 34.99, 'img/gorra10.webp', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3004, nombre: 'Jordan Basket Cap' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/gorrajordan.jfif" alt="Accesorio 5">
+        <p>Elegant Jordan Cap</p>
+        <p class="product-price">$39.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Elegant Jordan Cap', 39.99, 'img/gorrajordan.jfif', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3005, nombre: 'Elegant Jordan Cap' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/blanca.jpg" alt="Accesorio 6">
+        <p>Las Vegas Sports Cap</p>
+        <p class="product-price">$29.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Las Vegas Sports Cap', 29.99, 'img/blanca.jpg', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3006, nombre: 'Las Vegas Sports Cap' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/llavero.webp" alt="Accesorio 7">
+        <p>Jordan gold keychain</p>
+        <p class="product-price">$19.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan gold keychain', 19.99, 'img/llavero.webp', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3007, nombre: 'Jordan gold keychain' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/cartera.jfif" alt="Accesorio 8">
+        <p>Tony Montana Mood Wallet</p>
+        <p class="product-price">$59.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Tony Montana Mood Wallet', 59.99, 'img/cartera.jfif', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3008, nombre: 'Tony Montana Mood Wallet' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/medias.webp" alt="Accesorio 9">
+        <p>Comfortable NikexJordan Socks</p>
+        <p class="product-price">$14.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Comfortable NikexJordan Socks', 14.99, 'img/medias.webp', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3009, nombre: 'Comfortable NikexJordan Socks' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/pasa2.webp" alt="Accesorio 10">
+        <p>NikexJordan New York Balaclava</p>
+        <p class="product-price">$24.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('NikexJordan New York Balaclava', 24.99, 'img/pasa2.webp', 'Accesorios')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 3010, nombre: 'NikexJordan New York Balaclava' })" class="btn-wishlist" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 JE&J Streetwear | Líneas de atención: +57 300 123 4567</p>
+  </footer>
+
+  <script src="/js/nav-auth.js"></script>
+  <script src="carrito-funcional.js"></script>
+<script src="/PROYECTO_2/php/user/js/wishlist.js"></script>
+
+</body>
+</html>

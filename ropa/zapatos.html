@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zapatos - JE&J </title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-crown"></i> JE&J Streetwear</h1>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="catalogo.html"><i class="fas fa-th-large"></i> Catálogo</a></li>
+        <li><a href="camisas.html"><i class="fas fa-tshirt"></i> Camisas</a></li>
+        <li><a href="zapatos.html"><i class="fas fa-shoe-prints"></i> Zapatos</a></li>
+        <li><a href="buzos.html"><i class="fas fa-tshirt"></i> Buzos</a></li>
+        <li><a href="accesorios.html"><i class="fas fa-gem"></i> Accesorios</a></li>
+        <li><a href="carrito.php"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        <li><a href="../coleccion/coleccion.html"><i class="fas fa-star"></i> Colección</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-section">
+      <div class="product">
+        <img src="img/jordan1.jfif" alt="Zapato 1">
+        <p>Jordan Shoes J'Balvin Collection</p>
+        <p class="product-price">$189.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Shoes J\'Balvin Collection', 189.99, 'img/jordan1.jfif', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 101, nombre: 'Jordan Shoes J\'Balvin Collection' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan2.jpg" alt="Zapato 2">
+        <p>Jordan Drake Collection Shoes</p>
+        <p class="product-price">$199.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Drake Collection Shoes', 199.99, 'img/jordan2.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 102, nombre: 'Jordan Drake Collection Shoes' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan3.jpg" alt="Zapato 3">
+        <p>Jordan Blessed Collection Shoes</p>
+        <p class="product-price">$179.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Blessed Collection Shoes', 179.99, 'img/jordan3.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 103, nombre: 'Jordan Blessed Collection Shoes' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan4.jpg" alt="Zapato 4">
+        <p>Exclusive sports jordans</p>
+        <p class="product-price">$169.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Exclusive sports jordans', 169.99, 'img/jordan4.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 104, nombre: 'Exclusive sports jordans' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan5.jpg" alt="Zapato 5">
+        <p>Jordan New York Mode</p>
+        <p class="product-price">$194.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan New York Mode', 194.99, 'img/jordan5.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 105, nombre: 'Jordan New York Mode' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan6.jpg" alt="Zapato 6">
+        <p>Jordan Miami Version</p>
+        <p class="product-price">$184.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Miami Version', 184.99, 'img/jordan6.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 106, nombre: 'Jordan Miami Version' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan7.jpg" alt="Zapato 7">
+        <p>Jordan Snoopdog Collection</p>
+        <p class="product-price">$209.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Snoopdog Collection', 209.99, 'img/jordan7.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 107, nombre: 'Jordan Snoopdog Collection' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan8.jpg" alt="Zapato 8">
+        <p>Jordan XXXTENTACION Collection</p>
+        <p class="product-price">$219.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan XXXTENTACION Collection', 219.99, 'img/jordan8.jpg', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 108, nombre: 'Jordan XXXTENTACION Collection' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan50.webp" alt="Zapato 9">
+        <p>Jordan Lil Pump Collection</p>
+        <p class="product-price">$189.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Lil Pump Collection', 189.99, 'img/jordan50.webp', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 109, nombre: 'Jordan Lil Pump Collection' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+      
+      <div class="product">
+        <img src="img/jordan10.webp" alt="Zapato 10">
+        <p>Jordan Lil Jay Collection</p>
+        <p class="product-price">$199.99</p>
+        <button onclick="agregarProductoDesdeCatalogo('Jordan Lil Jay Collection', 199.99, 'img/jordan10.webp', 'Zapatos')">
+          <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+        <button onclick="agregarAWishlist({ product_id: 110, nombre: 'Jordan Lil Jay Collection' })" style="margin-left:8px;">❤ Wishlist</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 JE&J Streetwear | lineas de atencion.</p>
+  </footer>
+
+  <script src="/js/nav-auth.js"></script>
+  <script src="carrito-funcional.js"></script>
+  <script src="/PROYECTO_2/php/user/js/wishlist.js"></script>
+</body>
+</html>

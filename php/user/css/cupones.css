@@ -1,0 +1,177 @@
+/* ======== GENERAL ======== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======== HEADER ======== */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header .logo span {
+    color: #e50914;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #e50914;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ======== SECCIÓN PRINCIPAL ======== */
+main {
+    flex: 1;
+    padding: 50px 6%;
+    text-align: center;
+}
+
+.cupones-container h2 {
+    color: #e50914;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cupones-container .lead {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* ======== GRID DE CUPONES ======== */
+.grid-cupones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+/* ======== TARJETAS ======== */
+.cupon {
+    background: rgba(25, 25, 25, 0.9);
+    border: 2px solid #e50914;
+    border-radius: 15px;
+    padding: 25px 20px;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.25);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.cupon:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1a1a1a, #400000);
+    box-shadow: 0 0 30px rgba(255, 26, 26, 0.5);
+    border-color: #ff2020;
+}
+
+.cupon-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cupon h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.desc {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.codigo {
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+.codigo:hover {
+    background: #ff1a1a;
+}
+
+.fecha {
+    display: block;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 2px solid #e50914;
+}
+
+/* ======== ANIMACIÓN DE ENTRADA ======== */
+.cupon {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 0.8s ease forwards;
+}
+
+.cupon:nth-child(1) { animation-delay: 0.1s; }
+.cupon:nth-child(2) { animation-delay: 0.2s; }
+.cupon:nth-child(3) { animation-delay: 0.3s; }
+.cupon:nth-child(4) { animation-delay: 0.4s; }
+.cupon:nth-child(5) { animation-delay: 0.5s; }
+.cupon:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,100 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(90deg, #d50000, #000);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.main-header nav a:hover,
+.main-header nav .active {
+    background: #ff1744;
+}
+
+/* Contenedor */
+.container {
+    padding: 30px;
+}
+
+/* Botón volver */
+.btn-back {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 8px 14px;
+    background: #ff1744;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.btn-back:hover {
+    background: #d50000;
+}
+
+/* Tabla */
+.styled-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border: 1px solid #333;
+}
+.styled-table th {
+    background: #d50000;
+    color: white;
+}
+.styled-table tr:nth-child(even) {
+    background: #1e1e1e;
+}
+.styled-table tr:hover {
+    background: #333;
+}
+
+/* Roles con colores */
+.rol {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+.rol.admin { background: #ff1744; }
+.rol.user { background: #2979ff; }
+.rol.editor { background: #43a047; }
+
+/* Botones en tabla */
+.btn { display:inline-block; padding:6px 10px; border-radius:6px; color:#fff; text-decoration:none; border:none; cursor:pointer; }
+.btn.editar { background:#2979ff; margin-right:6px; }
+.btn.eliminar-usuario { background:#c0392b; }
+
+/* Footer */
+.main-footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #000;
+    color: #aaa;
+    font-size: 14px;
+}

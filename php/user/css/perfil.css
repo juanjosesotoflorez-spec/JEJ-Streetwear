@@ -1,0 +1,157 @@
+/* ===== Reset y fuente ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Header ===== */
+header {
+    background: #111;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e60000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+header .logo span {
+    color: #e60000;
+}
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+header nav a:hover {
+    color: #e60000;
+}
+
+/* ===== Contenido principal ===== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+.perfil-container {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.3);
+    border: 1px solid #e60000;
+    animation: fadeIn 0.8s ease-in-out;
+}
+h2 {
+    text-align: center;
+    color: #e60000;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+.bienvenida {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* ===== Inputs ===== */
+form label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+    color: #bbb;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.3);
+}
+input:focus, textarea:focus {
+    background: #333;
+    box-shadow: 0 0 10px #e60000, inset 0 0 5px rgba(255, 0, 0, 0.6);
+    border: 1px solid #e60000;
+}
+
+/* ===== Botón ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #e60000;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+}
+button:hover {
+    background: #ff1a1a;
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(255, 0, 0, 0.6);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #111;
+    color: #999;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 2px solid #e60000;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    .perfil-container {
+        padding: 20px;
+        max-width: 95%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}

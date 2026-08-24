@@ -1,0 +1,195 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+
+.header {
+	background-color: #333;
+	color: white;
+	padding: 15px 0;
+	text-align: center;
+}
+
+ .logo h1{
+    float: left;
+    margin-left: 15px;
+    line-height: 65px;
+    color:white;
+    margin-bottom: 10px;
+}
+.menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	/*background-color: #444;*/
+	}
+
+.menu ul li {
+	position: relative;
+
+}
+
+.menu ul li a {
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: white;
+	transition: background 0.3s;
+
+}
+
+.menu ul li a:hover {
+	background-color: #555;
+}
+
+
+.menu .submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #555;
+	min-width: 180px;
+}
+
+.menu .submenu li a {
+	padding: 12px 15px;
+	color: white;
+}
+
+.menu .submenu li a:hover {
+	background-color: #666;
+}
+
+
+.menu .has-submenu:hover .submenu {
+	display: block;
+}
+
+.box_admin {
+	background-color: white;
+	padding: 20px;
+	margin: 40px 0 0 40px;
+	width: 300px;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+form{
+	margin: auto;
+	width: 350px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #ccc;
+    padding: 18px;
+    border-radius: 7px;
+    
+}
+span{
+    color: white;
+    font-weight: bold;
+}
+label{
+	color: black;
+    font-weight: bold;
+    color: white;
+
+}
+ input[type="text"] {
+            width: 310px;
+            padding: 8px;
+            margin-right: 10px;
+            margin: 10px 0 15px 0;
+            border-radius: 4px;
+        }
+   input[type="password"] {
+            width: 310px;
+            padding: 8px;
+            margin-right: 10px;
+            margin: 10px 0 15px 0;
+            border-radius: 4px;
+        }
+
+   input[type="submit"],input[type="button"]{
+            padding: 7px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+             width: 310px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin:5px;
+        }
+   input[type="submit"]:hover,input[type="submit"]:hover, {
+            background-color: #0056b3;
+        }
+
+/* responsive */
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1001;
+}
+
+.menu-toggle span {
+	background: white;
+	height: 3px;
+	margin: 5px 0;
+	width: 25px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	 header{
+	 	height: 100px;
+	 }
+	 .logo h1{
+    float: left;
+    margin-left: 15px;
+    line-height: 65px;
+    color:white;
+    font-size: 25px;
+   
+}
+	.menu ul {
+		flex-direction: column;
+		position: absolute;
+		top: 65px;
+		left: 0;
+		width: 100%;
+		background-color: #333;
+		display: none;
+	}
+    
+	.menu ul.active {
+		display: flex;
+	}
+
+	.menu-toggle {
+		display: flex;
+	}
+
+	.menu ul li {
+		text-align: center;
+	}
+
+	.menu ul li .submenu {
+		position: static;
+		background-color: #444;
+	}
+
+	.menu ul li .submenu li a {
+		padding-left: 30px;
+	}
+}
