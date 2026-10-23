@@ -13,7 +13,7 @@
 
 ## 🌐 Sitio web
 
-> Enlace de la demo o página web: https://tu-sitio-web.com
+> Enlace de la demo o página web: https://jejstreetwear.iblogger.org/index.html
 
 JEJ-STREETWEAR es una tienda virtual de moda urbana inspirada en la estética streetwear, diseñada para mostrar productos, gestionar inventario básico y ofrecer una experiencia de compra demo con autenticación, carrito y administración.
 
@@ -109,28 +109,6 @@ http://localhost/jej-streetwear_nuevo/
 C:\xampp\php\php.exe scripts\create_admin.php
 ```
 
-## 🔐 Seguridad importante
-
-- No subas credenciales reales a GitHub.
-- Usa variables de entorno o un archivo `.env` local no versionado.
-- Mantén `assets/uploads/` protegido con `.htaccess`.
-- Los datos de conexión remota deben configurarse en el entorno del hosting, no en el código fuente.
-
-## 📦 Publicación en GitHub
-
-1. Inicializa el repositorio si aún no lo has hecho:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/JEJ-STREETWEAR.git
-git push -u origin main
-```
-
-2. Asegúrate de que archivos sensibles estén ignorados en `.gitignore`.
-3. Mantén el proyecto con una estructura ordenada, documentación clara y un README profesional.
 
 ## 📌 Nota
 
