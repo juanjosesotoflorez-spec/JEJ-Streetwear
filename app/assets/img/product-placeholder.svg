@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#151515"/>
+  <path d="M0 390 205 185l115 105 80-88 240 230v48H0Z" fill="#242424"/>
+  <circle cx="320" cy="215" r="95" fill="none" stroke="#ff2525" stroke-width="4"/>
+  <path d="M280 150h80l28 35-25 19-13-15v120h-60V189l-13 15-25-19z" fill="#333"/>
+  <text x="320" y="390" fill="#fff" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="middle">JEJ STREETWEAR</text>
+</svg>
