@@ -11,6 +11,10 @@
   <img src="https://img.shields.io/badge/MySQL-8%2FMariaDB-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 </p>
 
+## 🌐 Sitio web
+
+> Enlace de la demo o página web: https://tu-sitio-web.com
+
 JEJ-STREETWEAR es una tienda virtual de moda urbana inspirada en la estética streetwear, diseñada para mostrar productos, gestionar inventario básico y ofrecer una experiencia de compra demo con autenticación, carrito y administración.
 
 ## ✨ Características principales
@@ -39,28 +43,22 @@ JEJ-STREETWEAR es una tienda virtual de moda urbana inspirada en la estética st
 
 ```text
 jej-streetwear_nuevo/
-├── app/                   # Proyecto principal (app web)
-│   ├── admin/            # Panel administrativo
-│   ├── assets/           # CSS, imágenes, uploads y recursos front-end
-│   │   ├── css/
-│   │   ├── img/
-│   │   ├── js/
-│   │   └── uploads/
-│   ├── auth/             # Login, registro y cierre de sesión
-│   ├── config/           # Configuración de base de datos
-│   ├── database/         # SQL de inicialización
-│   ├── docs/             # Documentación adicional
-│   ├── includes/         # Header, footer, funciones y seguridad
-│   ├── pages/            # Catálogo, carrito, checkout y contacto
-│   ├── scripts/          # Utilidades y tareas de mantenimiento
-│   ├── .htaccess         # Reglas de servidor de la app
-│   ├── iniciar_servidor_publico.bat
-│   ├── setup_remote.php
-│   └── setup_tables.php
-├── .env.example          # Variables de entorno de ejemplo
-├── .gitignore            # Archivos ignorados para Git
-├── index.html            # Página pública de entrada
-├── README.md             # Documentación del proyecto
+├── admin/                 # Panel administrativo
+├── assets/                # CSS, imágenes, uploads y recursos front-end
+│   ├── css/
+│   ├── img/
+│   ├── js/
+│   └── uploads/
+├── auth/                  # Login, registro y cierre de sesión
+├── config/                # Configuración de base de datos
+├── database/              # SQL de inicialización
+├── docs/                  # Documentación adicional
+├── includes/              # Header, footer, funciones y seguridad
+├── pages/                 # Catálogo, carrito, checkout y contacto
+├── scripts/               # Utilidades y tareas de mantenimiento
+├── .env.example           # Variables de entorno de ejemplo
+├── index.html             # Página principal
+├── README.md              # Documentación del proyecto
 └── ...
 ```
 
@@ -82,7 +80,7 @@ cd JEJ-STREETWEAR
 
 2. Crea la base de datos en phpMyAdmin con el nombre `jej_streetwear`.
 
-3. Importa el archivo SQL ubicado en `app/database/jej_streetwear.sql`.
+3. Importa el archivo SQL ubicado en `database/jej_streetwear.sql`.
 
 4. Configura las variables de entorno del proyecto. Puedes basarte en el archivo `.env.example`:
 
@@ -108,14 +106,14 @@ http://localhost/jej-streetwear_nuevo/
 6. Si se requiere crear el primer administrador, ejecuta:
 
 ```powershell
-C:\xampp\php\php.exe app\scripts\create_admin.php
+C:\xampp\php\php.exe scripts\create_admin.php
 ```
 
 ## 🔐 Seguridad importante
 
 - No subas credenciales reales a GitHub.
 - Usa variables de entorno o un archivo `.env` local no versionado.
-- Mantén `app/assets/uploads/` protegido con `.htaccess`.
+- Mantén `assets/uploads/` protegido con `.htaccess`.
 - Los datos de conexión remota deben configurarse en el entorno del hosting, no en el código fuente.
 
 ## 📦 Publicación en GitHub
